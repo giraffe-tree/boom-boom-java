@@ -41,7 +41,8 @@ public class _01_VarHandleTest {
         } else {
             System.out.println("no access to set volatile apple size");
         }
-
+        int o = (int) sizeHandle.get(apple);
+        System.out.println(o);
 
     }
 
